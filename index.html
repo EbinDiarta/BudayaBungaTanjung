@@ -7,32 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Desa Bunga Tanjung</title>
-    <style>
+    <style type="text/tailwindcss">
         body {
             background-color: oklch(97.7% 0.017 320.058);
         }
+        
+        .grip-adat {
+            @apply border-2 h-50 md:h-80 w-50 md:w-80 p-5 shadow-md rounded-lg animate-pulse inline-block items-center; 
+        }
+
+        .budaya-text{
+            @apply text-base md:text-2xl text-center font-sans;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="bg-green-400 p-5 m-auto w-full shadow-green-500 shadow-md rounded-lg">
-        <span class="text-2xl md:text-3xl font-bold font-mono text-lime-200">Desa Bunga Tanjung</span>
+    <div class="bg-red-700 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg">
+        <span class="text-2xl md:text-3xl font-bold font-mono text-amber-200">Desa Bunga Tanjung</span>
     </div>
 
-    <div class="bg-blue-400 flex flex-col md:flex-row gap-4 p-5 w-full min-h-[400px] rounded-lg shadow-xl shadow-blue-500 mt-1">
+    <div class="bg-green-800 flex flex-col md:flex-row gap-4 p-5 w-full min-h-[400px] rounded-lg shadow-xl shadow-amber-400 mt-1">
 
-        <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[310px] shadow-xl">
+        <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
             </div>
         </div>
 
         <div class="w-full md:basis-1/2 min-h-[350px] flex flex-col pt-4 md:pt-8">
-            <h1 class="text-2xl font-bold font-mono text-black-200 text-center">
-                <p class="text-xl md:text-2xl font-bold font-mono text-black-200 text-center">Mengenal dan Melestarikan</p>
-                <p class="text-xl md:text-2xl font-bold font-mono text-black-200 text-center">Budaya Desa Bunga Tanjung</p>
+            <h1 class="text-2xl font-bold font-mono text-violet-200 text-center">
+                <p class="text-xl md:text-2xl font-bold font-mono text-violet-200 text-center">Mengenal dan Melestarikan</p>
+                <p class="text-xl md:text-2xl font-bold font-mono text-violet-200 text-center">Budaya Desa Bunga Tanjung</p>
             </h1>
 
-            <p class="text-base md:text-lg font-mono text-black-200 mt-4 text-justify">
+            <p class="text-base md:text-2xl font-mono text-violet-200 mt-4 text-justify">
                 Desa Bunga Tanjung memiliki budaya yang kaya dan beragam.
                 Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke generasi. Melalui pelestarian budaya,
                 kita dapat menjaga identitas desa dan memperkuat rasa kebersamaan di antara masyarakat.
@@ -57,7 +66,39 @@
             Setiap tradisi memiliki nilai sejarah, keagamaan, sosial, dan kebersamaan yang menjadi bagian penting dari identitas budaya masyarakat setempat.
         </h3>
 
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 justify-items-center mt-10">
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Adat Lamo Pusako Usang</p>
+            </div>
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Tale Haji</p>
+            </div>
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Ratib Saman</p>
+            </div>
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Kenduri Pernikahan</p>
+            </div>
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Kerajinan Tradisional</p>
+            </div>
+            <div class="grip-adat">
+                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <p class="budaya-text">Kuliner Tradisional</p>
+            </div>
+        </div>
+
     </div>
+
+    <footer class="bg-red-700 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center">
+        <span class="text-base md:text-2xl font-mono text-amber-100">Mengenal, Melestarikan, dan Mewariskan Kekayaan Budaya Lokal untuk Generasi Mendatang</span>
+        <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung. Seluruh Hak Cipta Dilindungi</p>
+    </footer>
 </body>
 
 </html>
