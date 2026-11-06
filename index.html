@@ -13,11 +13,15 @@
         }
         
         .grip-adat {
-            @apply border-2 h-50 md:h-80 w-50 md:w-80 p-5 shadow-md rounded-lg animate-pulse inline-block items-center; 
+            @apply border-2 h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg animate-pulse flex flex-col items-center gap-2; 
         }
 
         .budaya-text{
-            @apply text-base md:text-2xl text-center font-sans;
+            @apply text-base md:text-2xl text-center font-sans pt-2;
+        }
+
+        .show-hide{
+            @apply bg-blue-700 text-amber-200 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
         }
 
     </style>
@@ -70,29 +74,43 @@
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Adat Lamo Pusako Usang</p>
+                <button onclick="LihatDetail('adat')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Tale Haji</p>
+                <button onclick="LihatDetail('haji')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Ratib Saman</p>
+                <button onclick="LihatDetail('ratib')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Kenduri Pernikahan</p>
+                <button onclick="LihatDetail('kenduri')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Kerajinan Tradisional</p>
+                <button onclick="LihatDetail('kerajinan')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
                 <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
                 <p class="budaya-text">Kuliner Tradisional</p>
+                <button onclick="LihatDetail('kuliner')" class="show-hide">Detail</button>
             </div>
         </div>
 
+        <div id="adat" class="hidden bg-fuchsia-50 p-5 w-full h-auto rounded-lg shadow-xl mt-1 flex flex-col items-center ">
+            <p class="text-base md:text-2xl font-mono text-black-900 mt-4 text-justify">Adat Lamo Pusako Usang merupakan tradisi ziarah kubur masyarakat Desa Bunga Tanjung. Tradisi ini dilaksanakan sebagai bentuk penghormatan dan doa bagi keluarga, guru, serta orang-orang yang telah meninggal dunia.
+
+Kegiatan ini secara khusus dikenal dilaksanakan setelah masyarakat menyelesaikan ibadah puasa Ramadan dan puasa enam hari di bulan Syawal. Masyarakat mengunjungi makam keluarga maupun tokoh agama yang telah wafat.
+
+Selain sebagai kegiatan keagamaan, tradisi ini juga memiliki nilai silaturahmi, gotong royong, dan kebersamaan antarmasyarakat.</p>
+<button onclick="TutupDetail('adat')" class="show-hide mt-2">Tutup</button>
+        </div>
     </div>
 
     <footer class="bg-red-700 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center">
@@ -100,5 +118,16 @@
         <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung. Seluruh Hak Cipta Dilindungi</p>
     </footer>
 </body>
+<script>
+
+function LihatDetail(id) {
+    document.getElementById(id).classList.remove('hidden');
+}
+function TutupDetail(id) {
+    document.getElementById(id).classList.add('hidden');
+}
+
+
+</script>
 
 </html>
