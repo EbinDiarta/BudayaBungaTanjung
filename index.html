@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,35 +22,65 @@
         .show-hide{
             @apply bg-blue-700 text-amber-200 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
         }
+        .hide{
+            @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
+        }
 
+        .hidden {
+            @apply hidden bg-fuchsia-50 p-5 w-full  rounded-lg shadow-xl mt-1 flex flex-col items-center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="bg-red-700 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg">
-        <span class="text-2xl md:text-3xl font-bold font-mono text-amber-200">Desa Bunga Tanjung</span>
+    <div class="bg-red-700/90 p-5 m-auto w-full shadow-amber-400/60 shadow-md rounded-lg">
+        <p class="text-xs md:text-2xl md:font-bold font-serif text-amber-200">Budaya Adat Istiadad</p>
     </div>
+    <div class="md:grid grid-cols-1 gap-2 md:gap-4 md:justify-items-left pl-1 md:mt-25 mt-15 md:mb-25 mb-15">
+        <p class="text-2xl md:w-1/2 md:text-center md:text-5xl text-left flex flex-col md:items-center gap-2 ">
+            Adat Bersendi Syarak </br> Syarak
+                Bersendi Kitabullah</p>
+        </p>
+        <p class="text-base md:w-1/2 md:text-center md:text-3xl text-left flex flex-col md:items-center gap-2 pt-3  ">
+            Adat istiadat berlandaskan ajaran Islam </br> sedangkan ajaran Islam berpedoman pada Kitabullah (Al-Qur'an)
+        </p>
+    </div>
+  <!--  <div
+    class="bg-olive-700/50 text-left p-5 w-full min-h-[300px] rounded-lg shadow-xl shadow-olive-900/60 mt-1 grid justify-items-start items-center">
+    <div class="md:grid justify-items-start items-center">
+            <p class="text-2xl md:text-4xl md:font-bold font-serif text-amber-100">Adat Bersendi Syarak </br> Syarak
+                Bersendi Kitabullah</p> </br>
+                <div class="md:grid justify-items-start items-center">
+            <p class="text-xl md:text-3xl font-bold font-serif text-amber-50 ">Adat istiadat berlandaskan ajaran Islam </br> sedangkan ajaran Islam berpedoman pada Kitabullah (Al-Qur'an) </p>
+                </div>
 
-    <div class="bg-green-800 flex flex-col md:flex-row gap-4 p-5 w-full min-h-[400px] rounded-lg shadow-xl shadow-amber-400 mt-1">
-
-        <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
-            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
-            </div>
         </div>
-
-        <div class="w-full md:basis-1/2 min-h-[350px] flex flex-col pt-4 md:pt-8">
-            <h1 class="text-2xl font-bold font-mono text-violet-200 text-center">
-                <p class="text-xl md:text-2xl font-bold font-mono text-violet-200 text-center">Mengenal dan Melestarikan</p>
-                <p class="text-xl md:text-2xl font-bold font-mono text-violet-200 text-center">Budaya Desa Bunga Tanjung</p>
-            </h1>
-
+        
+    </div> -->
+    <div class="bg-green-800/80 p-5 w-full md:h-120 rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
+            </div> 
+        </div> -->
+        <img src="https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp"
+            class="float-left rounded-lg md:h-100 md:w-150 md:m-5">
+        <h1 class="text-2xl font-bold font-mono text-violet-200 text-center">
+            <p class="text-xl md:text-3xl font-bold font-mono text-violet-200 text-center">Mengenal dan Melestarikan
+                Budaya </p>
+            <p class="text-xl md:text-2xl font-bold font-mono text-violet-200 text-center">Desa Bunga Tanjung</p>
             <p class="text-base md:text-2xl font-mono text-violet-200 mt-4 text-justify">
                 Desa Bunga Tanjung memiliki budaya yang kaya dan beragam.
-                Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke generasi. Melalui pelestarian budaya,
+                Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke
+                generasi. Melalui pelestarian budaya,
                 kita dapat menjaga identitas desa dan memperkuat rasa kebersamaan di antara masyarakat.
             </p>
-        </div>
+        </h1>
+        <p class="text-center pt-3">
 
+            <button onclick="Jelajahi()"
+                class="bg-orange-300 text-yellow-100 w-auto font-bold py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Jelajahi
+                Budaya →</button>
+        </p>
     </div>
 
     <div class="bg-fuchsia-50 p-5 w-full min-h-[400px] rounded-lg shadow-xl  mt-1">
@@ -64,70 +93,98 @@
             Desa Bunga Tanjung, Kecamatan Tanah Cogok, Kabupaten Kerinci,
             memiliki kekayaan adat istiadat dan budaya yang telah diwariskan secara turun-temurun.
             Kehidupan masyarakatnya berpegang teguh pada falsafah “Adat Bersendi Syarak, Syarak Bersendi Kitabullah”,
-            yang mencerminkan perpaduan antara adat istiadat dan ajaran Islam sebagai pedoman dalam kehidupan bermasyarakat.
+            yang mencerminkan perpaduan antara adat istiadat dan ajaran Islam sebagai pedoman dalam kehidupan
+            bermasyarakat.
             Berbagai tradisi masih dikenal dan dilestarikan oleh masyarakat Desa Bunga Tanjung.
             Di antaranya adalah Adat Lamo Pusako Usang, Tale Haji, Ratib Saman, serta Kenduri Pernikahan Secara Adat.
-            Setiap tradisi memiliki nilai sejarah, keagamaan, sosial, dan kebersamaan yang menjadi bagian penting dari identitas budaya masyarakat setempat.
+            Setiap tradisi memiliki nilai sejarah, keagamaan, sosial, dan kebersamaan yang menjadi bagian penting dari
+            identitas budaya masyarakat setempat.
         </h3>
-        
-        <h1 class="text-base md:text-3xl font-serif text-center pt-6">Adat dan Budaya Desa Bunga Tanjung</h1>
 
+        <h1 class="text-base md:text-3xl font-serif text-center pt-6" id="Budaya">Adat dan Budaya Desa Bunga Tanjung
+        </h1>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4 justify-items-center mt-10">
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Adat Lamo Pusako Usang</p>
                 <button onclick="LihatDetail('adat')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Tale Haji</p>
                 <button onclick="LihatDetail('haji')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Ratib Saman</p>
                 <button onclick="LihatDetail('ratib')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Kenduri Pernikahan</p>
                 <button onclick="LihatDetail('kenduri')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Kerajinan Tradisional</p>
                 <button onclick="LihatDetail('kerajinan')" class="show-hide">Detail</button>
             </div>
             <div class="grip-adat">
-                <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg"></div>
+                <div
+                    class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
+                </div>
                 <p class="budaya-text">Kuliner Tradisional</p>
                 <button onclick="LihatDetail('kuliner')" class="show-hide">Detail</button>
             </div>
         </div>
 
-        <div id="adat" class="hidden bg-fuchsia-50 p-5 w-full h-auto rounded-lg shadow-xl mt-1 flex flex-col items-center ">
-            <p class="text-base md:text-2xl font-mono text-black-900 mt-4 text-justify">Adat Lamo Pusako Usang merupakan tradisi ziarah kubur masyarakat Desa Bunga Tanjung. Tradisi ini dilaksanakan sebagai bentuk penghormatan dan doa bagi keluarga, guru, serta orang-orang yang telah meninggal dunia.
+        <div id="adat" class="hidden">
+            <p class="text-base md:text-2xl font-mono text-black-900 mt-4 text-justify">Adat Lamo Pusako Usang merupakan
+                tradisi ziarah kubur masyarakat Desa Bunga Tanjung. Tradisi ini dilaksanakan sebagai bentuk penghormatan
+                dan doa bagi keluarga, guru, serta orang-orang yang telah meninggal dunia.
 
-Kegiatan ini secara khusus dikenal dilaksanakan setelah masyarakat menyelesaikan ibadah puasa Ramadan dan puasa enam hari di bulan Syawal. Masyarakat mengunjungi makam keluarga maupun tokoh agama yang telah wafat.
+                Kegiatan ini secara khusus dikenal dilaksanakan setelah masyarakat menyelesaikan ibadah puasa Ramadan
+                dan puasa enam hari di bulan Syawal. Masyarakat mengunjungi makam keluarga maupun tokoh agama yang telah
+                wafat.
 
-Selain sebagai kegiatan keagamaan, tradisi ini juga memiliki nilai silaturahmi, gotong royong, dan kebersamaan antarmasyarakat.</p>
-<button onclick="TutupDetail('adat')" class="show-hide mt-2">Tutup</button>
+                Selain sebagai kegiatan keagamaan, tradisi ini juga memiliki nilai silaturahmi, gotong royong, dan
+                kebersamaan antarmasyarakat.</p>
+            <div class="text-center">
+                <button onclick="TutupDetail('adat')" class="hide mt-2">Tutup</button>
+            </div>
         </div>
     </div>
 
     <footer class="bg-red-700 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center">
-        <span class="text-base md:text-2xl font-mono text-amber-100">Mengenal, Melestarikan, dan Mewariskan Kekayaan Budaya Lokal untuk Generasi Mendatang</span>
+        <span class="text-base md:text-2xl font-mono text-amber-100">Mengenal, Melestarikan, dan Mewariskan Kekayaan
+            Budaya Lokal untuk Generasi Mendatang</span>
         <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung. Seluruh Hak Cipta Dilindungi</p>
     </footer>
 </body>
 <script>
 
-function LihatDetail(id) {
-    document.getElementById(id).classList.remove('hidden');
-}
-function TutupDetail(id) {
-    document.getElementById(id).classList.add('hidden');
-}
+    function LihatDetail(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+    function TutupDetail(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+    function Jelajahi() {
+        //window.location.href = "#Budaya";
+        document.getElementById("Budaya").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 
 
 </script>
