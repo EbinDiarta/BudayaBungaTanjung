@@ -10,10 +10,6 @@
         rel="stylesheet">
     <title>Desa Bunga Tanjung</title>
     <style type="text/tailwindcss">
-        body {
-            background-color: oklch(97.7% 0.017 320.058);
-        }
-
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -70,11 +66,11 @@
             transform: translateY(0);
         }
         .grip-adat {
-            @apply border-2 h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2; 
+            @apply  h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2; 
         }
 
         .budaya-text{
-            @apply text-base md:text-2xl text-center font-sans pt-2;
+            @apply text-base md:text-2xl text-center text-white font-['Lora'] pt-2;
         }
 
         .show-hide{
@@ -98,7 +94,7 @@
         <p class="text-xs md:text-2xl md:font-bold font-serif text-amber-200">Budaya Adat Istiadad</p>
     </div>
     <div
-        class="bg-[#242424] md:grid grid-cols-1 gap-2 md:gap-2 text-[#D6A83C] rounded-lg md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
+        class="bg-[#242424] md:grid grid-cols-1 gap-2 md:gap-2 shadow-amber-400/60 shadow-md text-[#D6A83C] rounded-lg md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
         <p
             class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
             Adat Bersendi Syarak </br> Syarak
@@ -169,12 +165,12 @@
             identitas budaya masyarakat setempat.
         </h3>
     </div>
-    <div>
+    <div class="mb-3 pb-4">
 
-        <h1 class="text-base md:text-3xl font-serif text-center pt-6 crl" id="Budaya">Adat dan Budaya Desa Bunga Tanjung
+        <h1 class="text-base md:text-3xl font-serif text-center text-[#d6a62e] pt-6 crl" id="Budaya">Adat dan Budaya Desa Bunga Tanjung
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 justify-items-center mt-10">
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#8b2929]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
@@ -183,35 +179,35 @@
 
 
             </div>
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#315c3b]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Tale Haji</p>
                 <button onclick="LihatDetail('haji')" class="show-hide">Detail</button>
             </div>
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#b8860B]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Ratib Saman</p>
                 <button onclick="LihatDetail('ratib')" class="show-hide">Detail</button>
             </div>
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#344b70]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Kenduri Pernikahan</p>
                 <button onclick="LihatDetail('kenduri')" class="show-hide">Detail</button>
             </div>
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#70452F]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Kerajinan Tradisional</p>
                 <button onclick="LihatDetail('kerajinan')" class="show-hide">Detail</button>
             </div>
-            <div class="grip-adat reveal">
+            <div class="grip-adat reveal bg-[#704a78]">
                 <div
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
@@ -220,11 +216,11 @@
             </div>
         </div>
 
-        <h1 class="text-3xl md:text-5xl font-serif text-center pt-6 reveal">
+        <h1 class="text-3xl md:text-5xl font-['Playfair_Display'] text-[#d6a62e] text-center pt-6 reveal">
             Menjaga Warisan, Melestarikan Identitas Budaya
         </h1>
 
-        <h3 class="text-base md:text-2xl font-sans text-justify px-2 md:px-20 pt-5 reveal">
+        <h3 class="text-base md:text-2xl font-['Poppins'] text-[#c9a227] text-justify px-2 md:px-20 pt-5 reveal">
             Budaya dan tradisi merupakan bagian yang tidak terpisahkan dari kehidupan masyarakat Desa Bunga Tanjung. Di
             dalam setiap adat istiadat, kesenian, dan tradisi yang diwariskan oleh para leluhur, tersimpan berbagai
             nilai kehidupan, sejarah, serta kearifan lokal yang membentuk identitas masyarakat hingga saat ini. Setiap
@@ -264,12 +260,12 @@
     </div>
 
     <div
-        class="md:grid grid-cols-1 gap-2 md:gap-2 md:justify-items-left pl-4 pr-4 pb-10 md:mt-10 mt-15 hover:shadow-xl/30">
-        <p class="text-base md:w-200  font-mono md:text-2xl text-left flex flex-col items-center gap-2 reveal"
+        class="bg-[#8b2929] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        <p class="text-base md:w-200  font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
             id="adat-lamo">
             Adat Lamo Pusako Usang
         </p>
-        <p class="text-xs md:w-200  font-serif md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
+        <p class="text-xs md:w-200  font-['Loro'] md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
             Adat Lamo Pusako Usang merupakan salah satu tradisi yang dikenal dalam kehidupan masyarakat Desa Bunga
             Tanjung. Tradisi ini dilaksanakan sebagai bentuk penghormatan kepada orang-orang yang telah meninggal dunia,
             sekaligus sebagai upaya untuk mendoakan agar mereka mendapatkan tempat terbaik di sisi Allah SWT.
@@ -283,12 +279,12 @@
 
 
     <div
-        class="md:grid grid-cols-1 gap-2 md:gap-2 md:justify-items-left pl-4 pr-4 pb-10  md:pl-130 md:mt-10 mt-15 hover:shadow-xl/30">
-        <p class="text-base md:w-200  font-mono md:text-2xl text-left flex flex-col items-center gap-2 reveal"
+        class="bg-[#315c3b] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 md:pl-130 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        <p class="text-base md:w-200  font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
             id="adat-lamo">
             Tale Haji
         </p>
-        <p class="text-xs md:w-200  font-serif md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
+        <p class="text-xs md:w-200  font-['Loro'] md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
             Tale Haji merupakan salah satu kesenian tradisional masyarakat Kerinci yang berbentuk nyanyian atau pantun
             khas daerah. Tradisi ini dilantunkan sebagai bentuk ungkapan perasaan dan doa dalam melepas calon jemaah
             haji yang akan berangkat ke Tanah Suci.
@@ -302,12 +298,12 @@
         </p>
     </div>
     <div
-        class="md:grid grid-cols-1 gap-2 md:gap-2 md:justify-items-left pl-4 pr-4 pb-10 md:mt-10 mt-15 hover:shadow-xl/30">
-        <p class="text-base md:w-200  font-mono md:text-2xl text-left flex flex-col items-center gap-2 reveal"
+        class="bg-[#b8860B] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pt-3 pb-10 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        <p class="text-base md:w-200 font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
             id="adat-lamo">
             Ratib Saman
         </p>
-        <p class="text-xs md:w-200  font-serif md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
+        <p class="text-xs md:w-200  font['Loro'] md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
             Ratib Saman merupakan tradisi keagamaan masyarakat yang berakar dari ajaran Tarekat Sammaniyah. Tradisi ini
             berupa kegiatan zikir yang dilakukan secara bersama-sama dengan tata cara dan gerakan tertentu.
             Salah satu ciri khas Ratib Saman adalah pelaksanaan zikir sambil berdiri. Tradisi ini memiliki sifat sakral
