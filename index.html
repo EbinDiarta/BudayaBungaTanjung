@@ -80,12 +80,12 @@
             @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
         }
 
-        .hidden {
+       /* .hidden {
             @apply hidden bg-fuchsia-50 p-5 rounded-lg shadow-xl mt-1
            flex flex-col items-center w-full min-w-0
            text-center whitespace-normal break-words;
             
-        }
+        } */
     </style>
 </head>
 
@@ -175,7 +175,7 @@
                     class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Adat Lamo Pusako Usang</p>
-                <button onclick="LihatAdat()" class="show-hide">Detail</button>
+                <button onclick="LihatDetail('adat-lamo')" class="show-hide">Detail</button>
 
 
             </div>
@@ -260,7 +260,7 @@
     </div>
 
     <div
-        class="bg-[#8b2929] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        class="hidden bg-[#8b2929] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
         <p class="text-base md:w-200  font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
             id="adat-lamo">
             Adat Lamo Pusako Usang
@@ -279,9 +279,9 @@
 
 
     <div
-        class="bg-[#315c3b] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 md:pl-130 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        class="hidden bg-[#315c3b] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pb-10 pt-3 md:pl-130 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
         <p class="text-base md:w-200  font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
-            id="adat-lamo">
+            id="hajj">
             Tale Haji
         </p>
         <p class="text-xs md:w-200  font-['Loro'] md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
@@ -298,9 +298,9 @@
         </p>
     </div>
     <div
-        class="bg-[#b8860B] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pt-3 pb-10 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
+        class="hidden bg-[#b8860B] rounded-lg md:grid grid-cols-1 gap-2 md:gap-2 text-white md:justify-items-left pl-4 pr-4 pt-3 pb-10 mt-1 shadow-xl shadow-amber-400/60 hover:shadow-amber-500">
         <p class="text-base md:w-200 font-['Playfair_Display'] md:text-2xl text-left flex flex-col items-center gap-2 reveal"
-            id="adat-lamo">
+            id="ratib">
             Ratib Saman
         </p>
         <p class="text-xs md:w-200  font['Loro'] md:text-base text-justify flex flex-col items-center gap-2 pt-3 reveal">
