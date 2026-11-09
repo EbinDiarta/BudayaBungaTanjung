@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Desa Bunga Tanjung</title>
+    <style type="text/tailwindcss">
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .revea {
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .revea.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .scrl {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .scrl.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .crl {
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+
+
+        .crl.active {
+            opacity: 1;
+            transition: opacity 1s ease-in;
+        }
+        .bdy {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .bdy.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .grip-adat {
+            @apply  h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2; 
+        }
+
+        .budaya-text{
+            @apply text-base md:text-2xl text-center text-white font-['Lora'] pt-2;
+        }
+
+        .show-hide{
+            @apply bg-transparent text-emerald-400 font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
+        }
+        .hide{
+            @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
+        }
+
+       /* .hidden {
+            @apply hidden bg-fuchsia-50 p-5 rounded-lg shadow-xl mt-1
+           flex flex-col items-center w-full min-w-0
+           text-center whitespace-normal break-words;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <div
+        class="bg-olive-950 grid grid-cols-2 p-5 m-auto w-full shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50">
+        <p class="text-xs md:text-2xl md:font-bold font-serif text-amber-200 ">Budaya Adat Istiadat
+        </p>
+        <p class="text-right">
+            <button onclick="Home()"
+                class="text-xs bg-orange-300 text-yellow-100 w-auto md:py-2 px-3  md:px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Beranda</button>
+        </p>
+    </div>
+    <div
+        class="bg-[#242424]  md:gap-2 shadow-amber-400/60 shadow-md text-[#D6A83C] rounded-lg md:justify-items-center pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
+        <p
+            class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
+            Adat Lamu Pusako Usang
+        </p>
+        <p
+            class="text-base md:pl-2 md:text-center font-['Playfair_Display'] md:text-3xl  flex flex-col md:items-center gap-2 pt-3 reveal">
+            "Idek nyu Lapok dalop Uje - Idek nyu Lekam dalop Paneh"
+        </p>
+        <!--   <p
+            class="text-base md:pl-2 md:text-center font-mono text-violet-200 md:text-3xl  flex flex-col md:items-center gap-2 pt-3 reveal">
+            Adat Lamo Pusako Usang merupakan ungkapan yang mencerminkan kekayaan nilai budaya, tradisi, dan warisan
+                leluhur yang telah diwariskan secara turun-temurun. Bagi masyarakat Desa Bunga Tanjung, adat bukan
+                sekadar kebiasaan yang dilakukan sejak dahulu, melainkan pedoman kehidupan yang mengandung nilai-nilai
+                luhur, norma sosial, serta aturan dalam kehidupan bermasyarakat.
+        </p> -->
+    </div>
+
+    <div class="bg-[#8B2028] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
+            </div> 
+        </div> -->
+        <img src="https://plain-apac-prod-public.komododecks.com/202611/09/YapeS83pBYDck8KXZq6u/image.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Ziarah Bersama merupakan salah satu tradisi yang dikenal dalam kehidupan masyarakat Desa Bunga Tanjung.
+                Tradisi ini dilaksanakan sebagai bentuk penghormatan kepada orang-orang yang telah meninggal dunia,
+                sekaligus sebagai upaya untuk mendoakan agar mereka mendapatkan tempat terbaik di sisi Allah SWT.
+                Dalam pelaksanaannya, tradisi ini mencerminkan keyakinan masyarakat terhadap keberadaan roh leluhur atau
+                roh orang yang telah meninggal dunia. Kepercayaan terhadap roh-roh halus atau roh leluhur dikenal dengan
+                istilah animisme.
+                Tradisi ini menjadi bagian dari warisan kepercayaan dan kebudayaan masyarakat pada masa terdahulu yang
+                memiliki nilai sejarah dalam perjalanan kehidupan masyarakat Desa Bunga Tanjung.
+            </p>
+        </h1>
+    </div>
+    <div class="bg-[#315c3b] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <img src="https://plain-apac-prod-public.komododecks.com/202611/09/j27xKOE9ZwzR0A8pXvIW/image.jpg"
+            class="float-left rounded-lg md:h-90 mb-4 md:md-0 md:w-150 md:m-5 crl">
+        <img src="https://plain-apac-prod-public.komododecks.com/202611/09/j27xKOE9ZwzR0A8pXvIW/image.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Tale Haji merupakan salah satu kesenian tradisional masyarakat Kerinci yang berbentuk nyanyian atau
+                pantun khas daerah. Tradisi ini dilantunkan sebagai bentuk ungkapan perasaan dan doa dalam melepas calon
+                jemaah haji yang akan berangkat ke Tanah Suci.
+                Pelaksanaan Tale Haji biasanya dimulai sekitar satu hingga dua minggu sebelum keberangkatan calon jemaah
+                haji. Selama periode tersebut, masyarakat melantunkan Tale Haji sebagai bentuk penghormatan, ungkapan
+                kebahagiaan, serta doa dan harapan agar calon jemaah diberikan kesehatan, keselamatan, dan kelancaran
+                selama menjalankan ibadah haji.
+                Tale Haji bukan sekadar kesenian berupa nyanyian atau pantun, tetapi juga menjadi simbol kebersamaan,
+                kekeluargaan, dan kepedulian masyarakat terhadap sesama. Tradisi ini merupakan salah satu kekayaan
+                budaya Kerinci yang patut dijaga dan dilestarikan.
+            </p>
+        </h1>
+    </div>
+    <div class="bg-[#b8860b] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt-3Vn05D5ehZ5fKd5LvY0Dw-zXXmKuJvDK7kgrEvWPejHxwKioAIWaELI6ZqvLR0WzeF3sL4wxzFgRvNNyIa6IOazs3bjKvjlELewyjAgwnyxXNgGKpqhhUPu719JTOhJtPAs5qC_cq5o7bVwkveuMTrqrXxBCdPOgVCBR4z4a2qoZwjt9JUwvzAEEQ/s320/IMG-20230422-WA0009.jpg"
+            class="float-left rounded-lg md:h-90 mb-4 md:md-0 md:w-150 md:m-5 crl">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLnaDKf3CxTOHFyy-iMpZ6m3Smo2mBwe-dHK3nOMWtU51AYhtyVteMixGPfiRcMmw8jKeS4LeEy-XesOx-4Kf1UFnAeaRdg0mQKwRB3ZG0ghKEEML_P62IZdD8FyB3HYTnXlFl0S01TIFFnc2Goqb2SkSVuFsQ206L9CSeW3kSVUSgnmydt4fjefAWjg/s320/IMG-20230422-WA0010.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Ratib Saman</p>
+        </h1>
+    </div>
+    <div class="bg-[#344b70] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <img src="https://cdn.phototourl.com/member/2026-11-09-dd8a93fe-a384-4a6e-b727-7b4e36100290.jpg"
+            class="float-left rounded-lg mb-4 md:md-0 md:h-90 md:w-150 md:m-5 crl">
+        <img src="https://cdn.phototourl.com/member/2026-11-09-f04722e8-4508-445e-959e-e024be5f11d2.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Kenduri Pernikahan Secara Adat merupakan salah satu tradisi masyarakat Desa Bunga Tanjung yang memadukan
+                adat istiadat Kerinci dengan nilai-nilai ajaran Islam. Tradisi ini menjadi bagian penting dalam
+                pelaksanaan pernikahan sekaligus sebagai wujud kebersamaan dan kekeluargaan di tengah masyarakat.
+                Dalam pelaksanaannya, kenduri pernikahan memiliki ketentuan dan tata cara adat tersendiri. Salah satu
+                ketentuan yang dikenal adalah menengahkan beras sebanyak 20 gantang dan satu ekor kambing sebagai bagian
+                dari pelaksanaan kenduri adat. </br>
+                Parno Adat salah satu bagian penting dalam kenduri pernikahan, yaitu prosesi
+                penyampaian petatah-petitih, nasihat, serta pesan-pesan adat oleh para pemangku adat, seperti Tengganai
+                dan Ninik Mamak.
+                Melalui Parno Adat, para pemangku adat menyampaikan berbagai petuah dan nilai-nilai kehidupan yang
+                menjadi pedoman bagi masyarakat. Prosesi ini juga menjadi sarana untuk menjaga serta mewariskan adat
+                istiadat kepada generasi berikutnya.
+                Selain prosesi adat, kenduri pernikahan juga diwarnai dengan kegiatan doa bersama, makan bersama, dan
+                gotong royong yang melibatkan masyarakat setempat.
+                Keseluruhan rangkaian kenduri pernikahan mencerminkan nilai kebersamaan, kekeluargaan, penghormatan
+                terhadap adat, serta pelestarian budaya yang telah diwariskan secara turun-temurun.</p>
+        </h1>
+    </div>
+    <div class="bg-[#70452f] p-5 w-full md:h-115 rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <img src="https://cdn.phototourl.com/member/2026-11-09-9054b951-3e3a-46cc-94ea-10b1c7908197.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Sike Rebana merupakan salah satu kegiatan positif yang mengandung nilai-nilai keagamaan dan seni budaya
+                Islami. Syair-syair yang dilantunkan dalam kegiatan ini berisi puji-pujian dan selawat kepada Nabi
+                Muhammad SAW. Selain sebagai sarana untuk memperkuat kecintaan kepada Rasulullah, Sike Rebana juga
+                menjadi salah satu bentuk seni budaya bernuansa Islami yang masih dilestarikan oleh masyarakat Desa
+                Bunga Tanjung.</p>
+        </h1>
+    </div>
+
+
+    <footer class="bg-olive-950 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2">
+        <span class="text-base md:text-2xl font-mono text-amber-200">Budaya Desa Bunga Tanjung</br></span>
+        <span class="text-base md:text-2xl font-mono text-amber-200">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
+            Bersama</span>
+        <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
+        <p class="text-sm md:text-base text-amber-100">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
+            Novelia Mykella · Muhammad Akbar Ciptasati · Muhammad Sahrul Ihsan</p>
+        <p class="text-sm md:text-base text-amber-100">Informatika · Universitas Jambi</p>
+    </footer>
+</body>
+<script>
+
+    function LihatDetail(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+    function Home() {
+        window.location.href = "index.html";
+    }
+    function Jelajahi() {
+        document.getElementById("Budaya").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    document.querySelectorAll(".reveal, .scrl, .crl, .bdy, .revea").forEach(element => {
+        observer.observe(element);
+    });
+
+</script>
+
+</html>
