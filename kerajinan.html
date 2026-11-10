@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Desa Bunga Tanjung</title>
+    <style type="text/tailwindcss">
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .revea {
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .revea.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .scrl {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+
+
+        .scrl.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .crl {
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+
+
+        .crl.active {
+            opacity: 1;
+            transition: opacity 1s ease-in;
+        }
+        .bdy {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .bdy.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .grip-adat {
+            @apply  h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2; 
+        }
+
+        .budaya-text{
+            @apply text-base md:text-2xl text-center text-white font-['Lora'] pt-2;
+        }
+
+        .show-hide{
+            @apply bg-transparent text-emerald-400 font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
+        }
+        .hide{
+            @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
+        }
+
+       /* .hidden {
+            @apply hidden bg-fuchsia-50 p-5 rounded-lg shadow-xl mt-1
+           flex flex-col items-center w-full min-w-0
+           text-center whitespace-normal break-words;
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <div
+        class="bg-olive-950 grid grid-cols-2 p-5 m-auto w-full shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50">
+        <p class="text-xs md:text-2xl md:font-bold font-serif text-amber-200 ">Budaya Adat Istiadat
+        </p>
+        <p class="text-right">
+            <button onclick="Home()"
+                class="text-xs bg-orange-300 text-yellow-100 w-auto md:py-2 px-3  md:px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Beranda</button>
+        </p>
+    </div>
+    <div
+        class="bg-[#242424]  md:gap-2 shadow-amber-400/60 shadow-md text-[#D6A83C] rounded-lg md:justify-items-center pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
+        <p
+            class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
+            Kerajinan Anyaman Bambu
+        </p>
+        <!--   <p
+            class="text-base md:pl-2 md:text-center font-mono text-violet-200 md:text-3xl  flex flex-col md:items-center gap-2 pt-3 reveal">
+            Adat Lamo Pusako Usang merupakan ungkapan yang mencerminkan kekayaan nilai budaya, tradisi, dan warisan
+                leluhur yang telah diwariskan secara turun-temurun. Bagi masyarakat Desa Bunga Tanjung, adat bukan
+                sekadar kebiasaan yang dilakukan sejak dahulu, melainkan pedoman kehidupan yang mengandung nilai-nilai
+                luhur, norma sosial, serta aturan dalam kehidupan bermasyarakat.
+        </p> -->
+    </div>
+
+    <div class="bg-[#8B2028] p-5 w-full md:h-110 rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
+            </div> 
+        </div> -->
+        <img src="https://cdn.phototourl.com/member/2026-11-10-69fabdb1-5733-4030-a8c0-1ee8946a0433.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Di Desa Bunga Tanjung, Kecamatan Sitinjau Laut, Kabupaten Kerinci, kerajinan anyaman bambu dapat
+                diperkenalkan sebagai bagian dari kekayaan budaya dan warisan keterampilan tradisional masyarakat.
+                Selain memiliki fungsi praktis dalam kehidupan sehari-hari, kerajinan ini juga menggambarkan hubungan
+                erat antara masyarakat dengan alam serta pentingnya menjaga keterampilan yang diwariskan dari generasi
+                ke generasi.
+            </p>
+        </h1>
+    </div>
+    <div class="bg-[#8B2028] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
+            </div> 
+        </div> -->
+        <img src="https://cdn.phototourl.com/member/2026-11-10-7d601907-d93e-463f-9e0f-e9f8744a4e68.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Sejarah dan perkembangan anyaman bambu
+                Kerajinan anyaman bambu di Desa Bunga Tanjung memiliki perjalanan sejarah yang cukup panjang. Kegiatan
+                menganyam telah dikenal masyarakat sejak dahulu, terutama dalam pembuatan peralatan tradisional seperti
+                jangki dan nyiru. Kerajinan ini kemudian berkembang menjadi usaha kerajinan masyarakat yang lebih
+                beragam.
+                Anyaman bambu bukan sekadar kerajinan tangan, melainkan bagian dari pengetahuan dan keterampilan
+                masyarakat Desa Bunga Tanjung. Dalam proses pembuatannya, para pengrajin membutuhkan ketelitian,
+                kesabaran, kemampuan mengukur, menghitung, serta menciptakan pola yang teratur.
+                Keterampilan tersebut juga mengandung unsur pengetahuan matematika, seperti geometri, pola bilangan,
+                sudut, dan pencerminan. Hal ini menunjukkan bahwa budaya lokal memiliki nilai pengetahuan yang dapat
+                dipelajari dan diwariskan kepada generasi berikutnya
+            </p>
+        </h1>
+    </div>
+    <div class="bg-[#8B2028] p-5 w-full md:h-auto rounded-lg shadow-xl shadow-amber-400/60 mt-1">
+        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+            <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
+            </div> 
+        </div> -->
+        <img src="https://cdn.phototourl.com/member/2026-11-10-89de1ba8-83d2-4831-9249-28f2d9f92dd5.jpg"
+            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 ">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+                Salah satu perkembangan penting terjadi pada tahun 1995 melalui pendirian Sanggar Anyaman Bambu Usaha
+                Setia. Seiring berjalannya waktu, Desa Bunga Tanjung dikenal sebagai salah satu sentra kerajinan anyaman
+                bambu di Kabupaten Kerinci. Kerajinan ini tidak hanya menjadi identitas budaya, tetapi juga berpotensi
+                menjadi sumber penghasilan bagi masyarakat setempat.
+                Keberadaan anyaman bambu menjadi salah satu kekayaan budaya yang patut dibanggakan oleh masyarakat Desa
+                Bunga Tanjung. Pelestariannya membutuhkan dukungan masyarakat, khususnya generasi muda, agar
+                keterampilan menganyam tidak hilang ditelan perkembangan zaman.
+                Melalui pengenalan budaya, pengembangan produk kerajinan, serta pemanfaatan teknologi digital untuk
+                memperluas pemasaran, anyaman bambu diharapkan dapat terus dikenal sebagai salah satu identitas dan
+                kebanggaan masyarakat Desa Bunga Tanjung.
+            </p>
+        </h1>
+    </div>
+
+    <footer class="bg-olive-950 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2">
+        <span class="text-base md:text-2xl font-mono text-amber-200">Budaya Desa Bunga Tanjung</br></span>
+        <span class="text-base md:text-2xl font-mono text-amber-200">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
+            Bersama</span>
+        <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
+        <p class="text-sm md:text-base text-amber-100">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
+            Novelia Mykella · Muhammad Akbar Ciptasati · Muhammad Sahrul Ihsan</p>
+        <p class="text-sm md:text-base text-amber-100">Informatika · Universitas Jambi</p>
+    </footer>
+</body>
+<script>
+
+    function LihatDetail(id) {
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+    function Home() {
+        window.location.href = "index.html";
+    }
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    document.querySelectorAll(".reveal, .scrl, .crl, .bdy, .revea").forEach(element => {
+        observer.observe(element);
+    });
+
+</script>
+
+</html>
