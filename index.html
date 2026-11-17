@@ -65,37 +65,60 @@
             opacity: 1;
             transform: translateY(0);
         }
-        .grip-adat {
+       .grip-adat {
             @apply  h-60 md:h-90 w-50 md:w-80 p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2; 
         }
-
+        
         .budaya-text{
-            @apply text-base md:text-2xl text-center text-white font-['Lora'] pt-2;
+            @apply text-base md:text-2xl text-center text-[#ffe85d] font-['Lora'] pt-2;
         }
 
         .show-hide{
-            @apply bg-transparent text-emerald-400 font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
+            @apply bg-transparent text-[#ffffff] font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
         }
         .hide{
             @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
         }
-
        /* .hidden {
             @apply hidden bg-fuchsia-50 p-5 rounded-lg shadow-xl mt-1
            flex flex-col items-center w-full min-w-0
            text-center whitespace-normal break-words;
             
         } */
+
+        .css-loader {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        }
+        .css-loader div {
+        width: 4px;
+        height: 29px;
+        background: #ffffff;
+        border-radius: 2px;
+        animation: wave 1.2s ease-in-out infinite;
+        }
+        .css-loader div:nth-child(1){animation-delay:-1.2s}
+        .css-loader div:nth-child(2){animation-delay:-1.1s}
+        .css-loader div:nth-child(3){animation-delay:-1.0s}
+        .css-loader div:nth-child(4){animation-delay:-0.9s}
+        .css-loader div:nth-child(5){animation-delay:-0.8s}
+        @keyframes wave {
+        0%, 40%, 100% { transform: scaleY(0.4); }
+        20% { transform: scaleY(1); }
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="bg-olive-950 p-5 m-auto w-full shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50">
-        <p class="text-xs md:text-2xl md:font-bold font-serif text-amber-200">Budaya Adat Istiadat</p>
-
+    <div class="bg-[#171717] p-5 m-auto w-full shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50">
+        <p class="text-xs md:text-2xl md:font-bold font-serif text-[#F2c14e]">Budaya Adat Istiadat</p>
     </div>
     <div
-        class="bg-[#242424] md:grid grid-cols-1 gap-2 md:gap-2 shadow-md shadow-amber-400/20 text-amber-200 rounded-lg md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
+        class="bg-gradient-to-r from-[#17191c] to-[#454a54] md:grid grid-cols-1 gap-2 md:gap-2 shadow-md shadow-amber-400/20 text-[#FFD700] rounded-lg md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
         <p
             class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
             Adat Bersendi Syarak </br> Syarak
@@ -119,19 +142,19 @@
         </div>
         
     </div> -->
-    <div class="bg-[#344E41] p-5 w-full md:h-120 rounded-lg shadow-lg shadow-black/30 mt-1">
+    <div class="bg-gradient-to-r from-[#FF0000] to-[#DC143C]  p-5 w-full md:h-120 rounded-lg shadow-lg shadow-black/30 mt-1">
         <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('')] bg-cover bg-center w-full h-full rounded-lg">
             </div> 
         </div> -->
         <img src="https://cdn.phototourl.com/member/2026-11-09-ace2b0b7-5fff-4e76-96ae-ab3c792fdbc7.png"
-            class="float-left rounded-lg md:h-100 md:w-150 md:m-5">
+            class="float-left rounded-lg md:h-100 md:w-150 md:m-5 reveal">
         <h1 class="text-2xl font-mono text-violet-200 text-center">
-            <p class="text-xl md:text-3xl font-bold font-['Playfair_Display'] text-amber-200 text-center crl">Mengenal dan
+            <p class="text-xl md:text-3xl font-bold font-['Playfair_Display'] text-[#fff5df] text-center crl">Mengenal dan
                 Melestarikan
                 Budaya </p>
-            <p class="text-xl md:text-2xl font-bold font-['Playfair_Display'] text-amber-200 text-center crl">Desa Bunga Tanjung</p>
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#F3EBDD] mt-4 text-justify reveal">
+            <p class="text-xl md:text-2xl font-bold font-['Playfair_Display'] text-[#fff5df] text-center crl">Desa Bunga Tanjung</p>
+            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 text-justify reveal">
                 Desa Bunga Tanjung memiliki budaya yang kaya dan beragam.
                 Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke
                 generasi. Melalui pelestarian budaya,
@@ -141,12 +164,13 @@
         <p class="text-center pt-3">
 
             <button onclick="Jelajahi()"
-                class="bg-[#D6A83C] text-[#242424]w-auto font-bold py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Jelajahi
+                class="bg-[#ffffff] text-[#7f171d] w-auto font-bold py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Jelajahi
                 Budaya →</button>
+                <div class="css-loader"><div></div><div></div><div></div><div></div><div></div></div>
         </p>
     </div>
 
-    <div class="bg-[#315B50] p-5 w-full min-h-[400px] rounded-lg mt-1 shadow-lg shadow-black/30">
+    <div class=" bg-gradient-to-r from-[#012e0f] to-[#078e31]  p-5 w-full min-h-[400px] rounded-lg mt-1 shadow-lg shadow-black/30">
 
         <h1 class="text-3xl md:text-5xl text-amber-200 font-['Playfair_Display'] text-center pt-6 crl">
             Kenapa harus Bunga Tanjung?
@@ -173,7 +197,7 @@
             Desa Bunga Tanjung
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 justify-items-center mt-10">
-            <div class="grip-adat reveal bg-[#6A2925]">
+            <div class="grip-adat reveal bg-gradient-to-r from-[#80502d] to-[#c49a55]">
                 <div
                     class="bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ES4gNRPAmvEx1PgkCSs1kv05bJsYeuvBxwLd77kO8byDL6AgplkO_mFWYCCBzhAiZiWdH__sJkc8stDN7F9sy2b3KaPH5UYhbpBVLcGNIIgTb3lcEAqHOD4ZlqnPRyN4rdfKK_M_1CTNSkuSr21PB01QNchJmvmDgiyVdTxb9sXa9AIJvoo5cwA6xg/s320/FB_IMG_16822131608910424.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
@@ -181,14 +205,14 @@
                 <button onclick="LihatAdat()" class="show-hide">Detail</button>
             </div>
 
-            <div class="grip-adat reveal bg-[#795548]">
+            <div class="grip-adat reveal bg-gradient-to-r from-[#b83a35] to-[#e6a15c]">
                 <div
                     class="bg-[url('https://plain-apac-prod-public.komododecks.com/202611/09/M5ts6BUWJBgHSN1qjSVe/image.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Kuliner Tradisional</p>
                 <button onclick="LihatKuliner()" class="show-hide">Detail</button>
             </div>
-            <div class="grip-adat reveal bg-[#588157]">
+            <div class="grip-adat reveal bg-gradient-to-r from-[#477a50] to-[#b8a66b]">
                 <div
                     class="bg-[url('https://plain-apac-prod-public.komododecks.com/202611/09/Cie7gjzL1SJ9jzCaQkOn/image.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
@@ -237,17 +261,17 @@
         </h3>
 
 
-
+        
     </div>
 
-    <footer class="bg-olive-950 p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2">
-        <span class="text-base md:text-2xl font-mono text-amber-200">Budaya Desa Bunga Tanjung</br></span>
-        <span class="text-base md:text-2xl font-mono text-amber-200">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
+    <footer class="bg-[#292929] p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2">
+        <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Budaya Desa Bunga Tanjung</br></span>
+        <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
             Bersama</span>
-        <p class="text-sm md:text-base text-amber-100">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
-        <p class="text-sm md:text-base text-amber-100">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
+        <p class="text-sm md:text-base text-[#fff5df]">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
+        <p class="text-sm md:text-base text-[#fff5df]">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
             Novelia Mykella · Muhammad Akbar Ciptasati · Muhammad Sahrul Ihsan</p>
-        <p class="text-sm md:text-base text-amber-100">Informatika · Universitas Jambi</p>
+        <p class="text-sm md:text-base text-[#fff5df]">Informatika · Universitas Jambi</p>
     </footer>
 </body>
 <script>
