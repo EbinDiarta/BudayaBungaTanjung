@@ -90,6 +90,9 @@
 </head>
 
 <body>
+    <audio id="backsound" autoplay>
+        <source src="sound.mp3" type="audio/mp3">
+    </audio>
     <div
         class="bg-[#171717] grid grid-cols-2 p-5 m-auto w-full shadow-md shadow-amber-400/20 rounded-lg sticky top-0 z-50">
         <p class="text-xs md:text-2xl md:font-bold font-serif text-[#F2c14e]">Budaya Bunga Tanjung</p>
@@ -219,6 +222,9 @@
     document.querySelectorAll(".reveal, .scrl, .crl, .bdy, .revea").forEach(element => {
         observer.observe(element);
     });
+
+    const audio = document.getElementById("backsound");
+    audio.volume = 0.15;
 
 </script>
 
