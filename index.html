@@ -135,6 +135,9 @@
 </head>
 
 <body>
+    <audio id="backsound" autoplay>
+        <source src="sound.mp3" type="audio/mp3">
+    </audio>
     <div
         class="bg-[#171717] w-full p-5 m-auto shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50 flex justify-between items-center">
 
@@ -421,6 +424,9 @@
     document.querySelectorAll(".reveal, .scrl, .crl, .bdy, .revea").forEach(element => {
         observer.observe(element);
     });
+
+    const audio = document.getElementById("backsound");
+    audio.volume = 0.15;
 
 </script>
 
