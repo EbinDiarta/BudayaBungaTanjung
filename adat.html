@@ -75,7 +75,7 @@
         }
 
         .show-hide{
-            @apply bg-transparent text-emerald-400 font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
+            @apply bg-transparent text-emerald-400 font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out ;
         }
         .hide{
             @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
@@ -189,12 +189,61 @@
         </p> -->
     </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 justify-items-center mt-10 md:mb-2"  id="adat&tradisi">
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#c66b56] via-[#7b292b] to-[#360f19]"
+        id="adatt" style="display: block;">
+                <img src="https://plain-apac-prod-public.komododecks.com/202611/09/YapeS83pBYDck8KXZq6u/image.jpg"
+            class=" float-none rounded-lg md:h-55 h-30 w-50 md:w-80 md:m-5crl " >
+                <p class="budaya-text">Ziarah Bersama</p>
+                <button onclick="Lihat1()" class="show-hide w-full text-center">Detail</button>
+            </div>
+
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#174b3b] via-[#39765a] to-[#b6c99a]"
+        id="tale" style="display: block;">
+                <img src="https://plain-apac-prod-public.komododecks.com/202611/09/j27xKOE9ZwzR0A8pXvIW/image.jpg"
+            class=" float-none rounded-lg md:h-55 md:w-80 md:m-5crl " >
+                <p class="budaya-text">Tale Haji</p>
+                <button onclick="Lihat2()" class="show-hide w-full text-center">Detail</button>
+            </div>
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#f5d76e] via-[#c99a32] to-[#704b0c]"
+        id="ratib" style="display: block;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt-3Vn05D5ehZ5fKd5LvY0Dw-zXXmKuJvDK7kgrEvWPejHxwKioAIWaELI6ZqvLR0WzeF3sL4wxzFgRvNNyIa6IOazs3bjKvjlELewyjAgwnyxXNgGKpqhhUPu719JTOhJtPAs5qC_cq5o7bVwkveuMTrqrXxBCdPOgVCBR4z4a2qoZwjt9JUwvzAEEQ/s320/IMG-20230422-WA0009.jpg"
+            class=" float-none rounded-lg md:h-55 md:w-80 h-30 md:m-5crl " >
+                <p class="budaya-text">Ratib Saman</p>
+                <button onclick="Lihat3()" class="show-hide w-full text-center">Detail</button>
+            </div>
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#45677f] via-[#29475e] to-[#152a40]"
+        id="peno" style="display: block;">
+                <img src="https://cdn.phototourl.com/member/2026-11-09-f04722e8-4508-445e-959e-e024be5f11d2.jpg"
+            class=" float-none rounded-lg md:h-55 md:w-80 h-30 md:m-5crl " >
+                <p class="budaya-text">Kenduri Adat</p>
+                <button onclick="Lihat4()" class="show-hide w-full text-center">Detail</button>
+            </div>
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#c58a56] via-[#80502e] to-[#382014]"
+        id="sike" style="display: block;">
+                <img src="https://cdn.phototourl.com/member/2026-11-09-9054b951-3e3a-46cc-94ea-10b1c7908197.jpg"
+            class=" float-none rounded-lg md:h-55 md:w-80 h-30 md:m-5crl " >
+                <p class="budaya-text">Sike Rebana</p>
+                <button onclick="Lihat5()" class="show-hide w-full text-center">Detail</button>
+            </div>
+        <div class="h-60 md:h-auto w-50 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-gradient-to-br from-[#a77aa9] via-[#67416f] to-[#291a35]"
+        id="kmtan" style="display: block;">
+                <img src="https://cdn.phototourl.com/member/2026-11-12-abbe3ba9-7f5e-41d6-83a1-831eb5baf072.jpg"
+            class=" float-none rounded-lg md:h-55 md:w-80 h-30 md:m-5crl " >
+                <p class="budaya-text">Kenduri Kematian</p>
+                <button onclick="Lihat6()" class="show-hide w-full text-center">Detail</button>
+            </div>
+
+
+        </div>
+
     <div
-        class="bg-gradient-to-br from-[#c66b56] via-[#7b292b] to-[#360f19] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#c66b56] via-[#7b292b] to-[#360f19] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" 
+        style = "display: none;" id="ziarah">
         <img src="https://plain-apac-prod-public.komododecks.com/202611/09/YapeS83pBYDck8KXZq6u/image.jpg"
-            class=" float-left rounded-lg md:h-90 md:w-150 md:m-5crl ">
+            class=" float-none md:float-left rounded-lg md:h-60 md:w-100 md:m-5crl md:p-5">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 reveal">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#Ffffff] reveal text-justify">
                 Ziarah Bersama merupakan salah satu tradisi yang dikenal dalam kehidupan masyarakat Desa Bunga Tanjung.
                 Tradisi ini dilaksanakan sebagai bentuk penghormatan kepada orang-orang yang telah meninggal dunia,
                 sekaligus sebagai upaya untuk mendoakan agar mereka mendapatkan tempat terbaik di sisi Allah SWT.
@@ -207,13 +256,14 @@
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#174b3b] via-[#39765a] to-[#b6c99a]  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#174b3b] via-[#39765a] to-[#b6c99a] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+        id="haji" style="display: none;">
         <img src="https://plain-apac-prod-public.komododecks.com/202611/09/j27xKOE9ZwzR0A8pXvIW/image.jpg"
-            class="float-left rounded-lg md:h-90 mb-4 md:md-0 md:w-150 md:m-5 crl">
+            class="float-left rounded-lg md:h-70 mb-4 md:md-0 md:w-120 md:m-5 crl md:ml-40">
         <img src="https://cdn.phototourl.com/member/2026-11-10-1aab4af5-32c0-4322-8f6b-da21be42e16d.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+            class="float-none rounded-lg md:h-70 md:w-120 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 reveal">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#Ffffff] mt-4 reveal text-justify">
                 Tale Haji merupakan salah satu kesenian tradisional masyarakat Kerinci yang berbentuk nyanyian atau
                 pantun khas daerah. Tradisi ini dilantunkan sebagai bentuk ungkapan perasaan dan doa dalam melepas calon
                 jemaah haji yang akan berangkat ke Tanah Suci.
@@ -228,13 +278,14 @@
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#f5d76e] via-[#c99a32] to-[#704b0c] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#f5d76e] via-[#c99a32] to-[#704b0c] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1 "
+        id="saman" style="display: none;">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt-3Vn05D5ehZ5fKd5LvY0Dw-zXXmKuJvDK7kgrEvWPejHxwKioAIWaELI6ZqvLR0WzeF3sL4wxzFgRvNNyIa6IOazs3bjKvjlELewyjAgwnyxXNgGKpqhhUPu719JTOhJtPAs5qC_cq5o7bVwkveuMTrqrXxBCdPOgVCBR4z4a2qoZwjt9JUwvzAEEQ/s320/IMG-20230422-WA0009.jpg"
-            class="float-left rounded-lg md:h-90 mb-4 md:md-0 md:w-150 md:m-5 crl">
+            class="float-left rounded-lg md:h-70 mb-4 md:md-0 md:w-120 md:m-5 md:ml-40 crl">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLnaDKf3CxTOHFyy-iMpZ6m3Smo2mBwe-dHK3nOMWtU51AYhtyVteMixGPfiRcMmw8jKeS4LeEy-XesOx-4Kf1UFnAeaRdg0mQKwRB3ZG0ghKEEML_P62IZdD8FyB3HYTnXlFl0S01TIFFnc2Goqb2SkSVuFsQ206L9CSeW3kSVUSgnmydt4fjefAWjg/s320/IMG-20230422-WA0010.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+            class="float-none rounded-lg md:h-70 md:w-120 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#F5f5f0] mt-4">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#F5f5f0] mt-4 reveal text-justify">
                 Ratib Saman Salah satu warisan keagamaan yang masih dikenal di Bunga Tanjung adalah tradisi zikir Ratib
                 Saman yang berkaitan dengan Tarekat Samaniyah.
                 Zikir Ratib Saman merupakan praktik mengingat dan mengagungkan Allah SWT melalui pelafalan kalimat
@@ -279,13 +330,14 @@
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#45677f] via-[#29475e] to-[#152a40] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#45677f] via-[#29475e] to-[#152a40] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+        id="nikah" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-09-dd8a93fe-a384-4a6e-b727-7b4e36100290.jpg"
-            class="float-left rounded-lg mb-4 md:md-0 md:h-90 md:w-150 md:m-5 crl">
+            class="float-left rounded-lg mb-4 md:md-0 md:h-70 md:w-120 md:m-5 crl md:ml-40">
         <img src="https://cdn.phototourl.com/member/2026-11-09-f04722e8-4508-445e-959e-e024be5f11d2.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+            class="float-none rounded-lg md:h-70 md:w-120 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 reveal">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#Ffffff] mt-4 reveal text-justify">
                 Kenduri Pernikahan Secara Adat merupakan salah satu tradisi masyarakat Desa Bunga Tanjung yang memadukan
                 adat istiadat Kerinci dengan nilai-nilai ajaran Islam. Tradisi ini menjadi bagian penting dalam
                 pelaksanaan pernikahan sekaligus sebagai wujud kebersamaan dan kekeluargaan di tengah masyarakat.
@@ -313,11 +365,12 @@
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#c58a56] via-[#80502e] to-[#382014] p-5 w-full md:h-115 rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#c58a56] via-[#80502e] to-[#382014] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+        id="rebana" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-09-9054b951-3e3a-46cc-94ea-10b1c7908197.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
-        <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff]mt-4 reveal">
+            class="float-none md:float-left rounded-lg md:h-55 md:w-100 md:m-5 crl">
+        <h1 class="text-2xl font-mono text-violet-200 md:pt-5">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#Ffffff]mt-4 reveal text-justify">
                 Sike Rebana merupakan salah satu kegiatan positif yang mengandung nilai-nilai keagamaan dan seni budaya
                 Islami. Syair-syair yang dilantunkan dalam kegiatan ini berisi puji-pujian dan selawat kepada Nabi
                 Muhammad SAW. Selain sebagai sarana untuk memperkuat kecintaan kepada Rasulullah, Sike Rebana juga
@@ -334,13 +387,14 @@
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#a77aa9] via-[#67416f] to-[#291a35]  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#a77aa9] via-[#67416f] to-[#291a35]  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+        id="kematian" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-12-abbe3ba9-7f5e-41d6-83a1-831eb5baf072.jpg"
-            class="float-left rounded-lg md:h-90 md:w-130 md:m-5 crl">
+            class="float-left rounded-lg md:h-70 md:w-110 md:m-5 crl md:ml-60">
         <img src="https://cdn.phototourl.com/member/2026-11-12-e64c2cd3-ecc8-4fd3-8688-a7d5c11e8603.jpg"
-            class="float-left rounded-lg md:h-90 md:w-80 md:m-5 crl">
+            class="float-none  rounded-lg md:h-70 md:w-70 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 reveal">
+            <p class="text-base md:text-xl font-['Poppins'] text-[#Ffffff] mt-4 reveal text-justify">
                 Tradisi kenduri kematian merupakan salah satu kebiasaan masyarakat Desa Bunga Tanjung, Kabupaten
                 Kerinci, yang dilaksanakan sebagai bentuk penghormatan kepada orang yang telah meninggal dunia serta
                 sebagai sarana untuk mendoakan almarhum atau almarhumah. Tradisi ini juga menjadi wujud kebersamaan,
@@ -376,6 +430,34 @@
             behavior: "smooth"
         });
     }
+
+    function Lihat1() {
+        document.getElementById("adatt").style.display = "none";
+        document.getElementById("ziarah").style.display = "block";
+    }
+    function Lihat2() {
+        document.getElementById("tale").style.display = "none";
+        document.getElementById("haji").style.display = "block";
+    }
+    function Lihat3() {
+        document.getElementById("ratib").style.display = "none";
+        document.getElementById("saman").style.display = "block";
+    }
+    function Lihat4() {
+        document.getElementById("peno").style.display = "none";
+        document.getElementById("nikah").style.display = "block";
+    }
+    function Lihat5() {
+        document.getElementById("sike").style.display = "none";
+        document.getElementById("rebana").style.display = "block";
+    }
+    function Lihat6() {
+        document.getElementById("kmtan").style.display = "none";
+        document.getElementById("kematian").style.display = "block";
+    }
+
+
+
     function Home() {
         window.location.href = "index.html";
     }
