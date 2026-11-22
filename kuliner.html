@@ -11,9 +11,7 @@
     <title>Desa Bunga Tanjung</title>
     <style type="text/tailwindcss">
 
-        body{
-            background-color: rgb(255, 235, 211);
-        }
+        
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -130,7 +128,7 @@
     </style>
 </head>
 
-<body>
+<body class="bg-amber-100/50">
     <audio id="backsound" autoplay>
         <source src="sound.mp3" type="audio/mp3">
     </audio>
@@ -177,11 +175,11 @@
     </div>
 
     <div
-        class="bg-gradient-to-r from-[#012e0f] to-[#078e31]  backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-amber-200/30  backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
         <img src="https://plain-apac-prod-public.komododecks.com/202611/09/M5ts6BUWJBgHSN1qjSVe/image.jpg"
             class="float-left rounded-lg md:h-70 md:w-125 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#F3EBDD] mt-4 reveal text-justify">
+            <p class="text-base md:text-2xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Kuliner tradisional merupakan salah satu bagian dari kekayaan budaya dan identitas masyarakat Desa Bunga
                 Tanjung, Kecamatan Sitinjau Laut, Kabupaten Kerinci, Provinsi Jambi. Beragam makanan tradisional
                 mencerminkan kebiasaan, kreativitas, serta kearifan lokal masyarakat dalam mengolah bahan-bahan yang
@@ -203,31 +201,31 @@
             </p>
         </h1>
     </div>
-    <div class="md:grid grid-flow-col justify-items-center ">
+    <div class="md:grid grid-flow-col justify-items-center md:mb-20">
         <div class="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-3 md:w-1/2 justify-items-center mt-10 md:mb-2 ml-2 mr-2"
             id="adat&tradisi">
-            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-100 backdrop-blur-sm"
+            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-200 backdrop-blur-sm"
                 id="lema" style="display: block;">
                 <img src="https://cdn.phototourl.com/member/2026-11-12-ba1ce5fd-e437-48c3-a8f3-bb0aa94f7638.jpg"
                     class=" float-none rounded-lg md:h-55 h-30 w-50 md:w-70 md:m-5crl ">
                 <p class="budaya-text">lemang</p>
                 <button onclick="Lihat1()" class="show-hide w-full text-center">Detail</button>
             </div>
-            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-100 backdrop-blur-sm"
+            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-200 backdrop-blur-sm"
                 id="nasi" style="display: block;">
                 <img src="https://rricoid-assets.obs.ap-southeast-4.myhuaweicloud.com/berita/Sungaipenuh/o/1722394928735-605c28174d5c8/k07zw4icyeppwkh.jpeg"
                     class=" float-none rounded-lg md:h-55 h-30 w-50 md:w-70 md:m-5crl ">
                 <p class="budaya-text">Nasi Ibeak</p>
                 <button onclick="Lihat2()" class="show-hide w-full text-center">Detail</button>
             </div>
-            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-100 backdrop-blur-sm"
+            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-200 backdrop-blur-sm"
                 id="onde" style="display: block;">
                 <img src="https://cdn.yummy.co.id/content-images/images/20240215/5fDlLEIy46knHKp3x0KyEoIbQKHn4Df3-31373037393331333738d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_388,h_388,m_fixed,x-oss-process=image/format,webp"
                     class=" float-none rounded-lg md:h-55 h-30 w-50 md:w-70 md:m-5crl ">
                 <p class="budaya-text">Onde Onde</p>
                 <button onclick="Lihat3()" class="show-hide w-full text-center">Detail</button>
             </div>
-            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-100 backdrop-blur-sm"
+            <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-yellow-200 backdrop-blur-sm"
                 id="agar" style="display: block;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlbQ9ExPU54XkMjVgsBXniLnWxrXeJXLaqnmZeohGNTw&s=10"
                     class=" float-none rounded-lg md:h-55 h-30 w-50 md:w-70 md:m-5crl ">
@@ -237,7 +235,7 @@
         </div>
     </div>
 
-    <div class="bg-white/50 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="Lemang"
+    <div class="bg-amber-200/30 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="Lemang"
         style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-12-dae9cfb3-72bb-400f-94d9-d330a0b92456.jpg"
             class="float-left rounded-lg md:h-70 md:w-120 md:ml-40 md:m-5crl">
@@ -257,7 +255,7 @@
             </p>
         </h1>
     </div>
-    <div class="bg-white/50 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="ibat"
+    <div class="bg-amber-200/30 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="ibat"
         style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-12-499ba318-3ac3-4f1c-aa5c-46d11756361d.jpg"
             class="float-left rounded-lg md:h-60 md:w-110 md:m-5 crl md:mt-8">
@@ -275,7 +273,7 @@
             </p>
         </h1>
     </div>
-    <div class="bg-white/50 backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="ondel"
+    <div class="bg-amber-200/30 backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="ondel"
         style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-15-08af825a-fa19-4b86-bbb3-c3aba02155f6.jpg"
             class="float-left rounded-lg md:h-60 md:w-110 md:m-5 crl">
@@ -292,7 +290,7 @@
             </p>
         </h1>
     </div>
-    <div class="bg-white/50 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="Agar"
+    <div class="bg-amber-200/30 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1" id="Agar"
         style="display: none;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cDcvfNn8MC0E_Z-j4DPOBoxrnvY9TT2T2rACeBBaOg&s"
             class="md:float-left rounded-lg md:h-50 md:w-75 h-80 w-100 md:m-5 crl ">
