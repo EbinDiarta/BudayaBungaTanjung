@@ -10,6 +10,11 @@
         rel="stylesheet">
     <title>Desa Bunga Tanjung</title>
     <style type="text/tailwindcss">
+
+        body{
+            background-color: rgb(255, 235, 211);
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -183,33 +188,39 @@
     </div>
 
     <div
-        class="bg-gradient-to-br from-[#66834f] via-[#3e5b36] to-[#203321] p-5 w-full md:h-110 rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-gradient-to-br from-[#66834f] via-[#3e5b36] to-[#203321] p-5 w-full md:h-85 rounded-lg shadow-lg shadow-black/30 mt-1">
         <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
             </div> 
         </div> -->
         <img src="https://cdn.phototourl.com/member/2026-11-10-69fabdb1-5733-4030-a8c0-1ee8946a0433.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
+            class="float-left rounded-lg md:h-60 md:w-110 md:m-5 crl">
         <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal text-justify">
                 Di Desa Bunga Tanjung, Kecamatan Sitinjau Laut, Kabupaten Kerinci, kerajinan anyaman bambu dapat
                 diperkenalkan sebagai bagian dari kekayaan budaya dan warisan keterampilan tradisional masyarakat.
                 Selain memiliki fungsi praktis dalam kehidupan sehari-hari, kerajinan ini juga menggambarkan hubungan
                 erat antara masyarakat dengan alam serta pentingnya menjaga keterampilan yang diwariskan dari generasi
                 ke generasi.
             </p>
+            <p class="text-center pt-3 text-base" id="button" style="display: block;">
+
+            <button onclick="Jelajahi()"
+                class="bg-[#ffffff] text-gray-950 w-auto py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Selengkapnya</button>
+            </p>
         </h1>
     </div>
+    <div id="anyaman" style="display: none;">
     <div
-        class="bg-gradient-to-br from-[#66879a] via-[#3d5c70] to-[#1d3445]   p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-white/30 backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
         <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
             </div> 
         </div> -->
         <img src="https://cdn.phototourl.com/member/2026-11-15-27f42117-c5f9-4cbe-ab0c-bbe02690f355.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
-        <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+            class="float-left rounded-lg md:h-60 md:w-100 md:m-5 crl md:mt-8">
+        <h1 class="text-xl font-mono text-violet-200 ">
+            <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Sejarah dan perkembangan anyaman bambu
                 Kerajinan anyaman bambu di Desa Bunga Tanjung memiliki perjalanan sejarah yang cukup panjang. Kegiatan
                 menganyam telah dikenal masyarakat sejak dahulu, terutama dalam pembuatan peralatan tradisional seperti
@@ -219,27 +230,25 @@
                 masyarakat Desa Bunga Tanjung. Dalam proses pembuatannya, para pengrajin membutuhkan ketelitian,
                 kesabaran, kemampuan mengukur, menghitung, serta menciptakan pola yang teratur.
                 Keterampilan tersebut juga mengandung unsur pengetahuan matematika, seperti geometri, pola bilangan,
-                sudut, dan pencerminan. Hal ini menunjukkan bahwa budaya lokal memiliki nilai pengetahuan yang dapat
-                dipelajari dan diwariskan kepada generasi berikutnya
+                sudut, dan pencerminan.
             </p>
         </h1>
     </div>
     <div
-        class="bg-gradient-to-br from-[#a75e68] via-[#713a49] to-[#391f2d] p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
+        class="bg-white/30 backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1">
         <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('https://static.tripzilla.id/media/229986/conversions/721f5cd9-95c8-4553-9fb7-db4e28b0c0e3-w768.webp')] bg-cover bg-center w-full h-full rounded-lg">
             </div> 
         </div> -->
         <img src="https://cdn.phototourl.com/member/2026-11-10-89de1ba8-83d2-4831-9249-28f2d9f92dd5.jpg"
-            class="float-left rounded-lg md:h-90 md:w-150 md:m-5 crl">
-        <h1 class="text-2xl font-mono text-violet-200 ">
-            <p class="text-base md:text-2xl font-['Poppins'] text-violet-50 mt-4 reveal">
+            class="float-left rounded-lg md:h-60 md:w-100 md:m-5 crl md:mt-8">
+        <h1 class="text-xl font-mono text-violet-200 ">
+            <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Salah satu perkembangan penting terjadi pada tahun 1995 melalui pendirian Sanggar Anyaman Bambu Usaha
                 Setia. Seiring berjalannya waktu, Desa Bunga Tanjung dikenal sebagai salah satu sentra kerajinan anyaman
                 bambu di Kabupaten Kerinci. Kerajinan ini tidak hanya menjadi identitas budaya, tetapi juga berpotensi
                 menjadi sumber penghasilan bagi masyarakat setempat.
-                Keberadaan anyaman bambu menjadi salah satu kekayaan budaya yang patut dibanggakan oleh masyarakat Desa
-                Bunga Tanjung. Pelestariannya membutuhkan dukungan masyarakat, khususnya generasi muda, agar
+                Pelestariannya membutuhkan dukungan masyarakat, khususnya generasi muda, agar
                 keterampilan menganyam tidak hilang ditelan perkembangan zaman.
                 Melalui pengenalan budaya, pengembangan produk kerajinan, serta pemanfaatan teknologi digital untuk
                 memperluas pemasaran, anyaman bambu diharapkan dapat terus dikenal sebagai salah satu identitas dan
@@ -247,7 +256,7 @@
             </p>
         </h1>
     </div>
-
+</div>
     <footer class="bg-[#292929] p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2">
         <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Budaya Desa Bunga Tanjung</br></span>
         <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
@@ -259,6 +268,11 @@
     </footer>
 </body>
 <script>
+
+    function Jelajahi() {
+        document.getElementById("button").style.display = "none";
+        document.getElementById("anyaman").style.display = "block";
+    }
 
     function LihatDetail(id) {
         document.getElementById(id).classList.remove('hidden');
