@@ -70,11 +70,11 @@
         }
         
         .budaya-text{
-            @apply text-base md:text-2xl text-center text-[#ffe85d] font-['Lora'] pt-2;
+            @apply text-base md:text-2xl text-center text-[#1F2937] font-['Lora'] pt-2;
         }
 
         .show-hide{
-            @apply bg-transparent text-[#ffffff] font-bold py-2 px-4 rounded-lg hover:text-emerald-200 transition duration-300 ease-in-out;
+            @apply bg-transparent text-[#6B7280] font-bold py-2 px-4 rounded-lg hover:text-gray-950 transition duration-300 ease-in-out;
         }
         .hide{
             @apply bg-red-700 text-amber-200 font-bold py-2 text-center px-4 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out;
@@ -139,7 +139,7 @@
         <source src="sound.mp3" type="audio/mp3">
     </audio>
     <div
-        class="bg-[#171717] w-full p-5 m-auto shadow-amber-400/60 shadow-md rounded-lg sticky top-0 z-50 flex justify-between items-center">
+        class="bg-[#171717] w-full p-5 m-auto shadow-md shadow-black/10shadow-amber-400/60 shadow-md  sticky top-0 z-50 flex justify-between items-center">
 
         <div class="text-xl md:text-2xl md:font-bold font-serif text-[#F2c14e] text-left">Budaya Bunga Tanjung</div>
         <div class="hidden text-xl md:flex gap-5 text-[#F2c14e] md:text-right ">
@@ -163,19 +163,23 @@
     </div>
     </div>
     <div
-        class="bg-gradient-to-r from-[#17191c] to-[#454a54] md:grid grid-cols-1 gap-2 md:gap-2 shadow-md shadow-amber-400/20 text-[#FFD700] rounded-lg md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
-        <p
-            class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
-            Adat Bersendi Syarak </br> Syarak
-            Bersendi Kitabullah</p>
-        </p>
-        <p
-            class="text-base md:w-180 md:pl-2 md:text-center font-['Playfair_Display'] md:text-3xl text-left flex flex-col md:items-center gap-2 pt-3 reveal">
-            Adat istiadat berlandaskan ajaran Islam </br> Sedangkan ajaran Islam berpedoman pada Kitabullah
-            (Al-Qur'an)
-        </p>
-    </div>
-    <!--  <div
+        class="h-screen w-full bg-[url(https://cdn.phototourl.com/anon/2026-11-25-71308827-3242-47ef-a591-c8fd8c4b2cfd.jpg)] bg-center bg-cover bg-no-repeat">
+        <div class=" bg-black/50 backdrop-blur-md ">
+        <div
+            class=" md:grid grid-cols-1 gap-2 md:gap-2  text-[#F2C14E]  md:justify-items-left pl-4 pr-27 md:pt-25 pt-15 md:pb-25 pb-15">
+            <p
+                class="text-2xl md:w-190 md:text-center md:text-5xl font-['Cinzel'] text-left flex flex-col md:items-center gap-2 revea">
+                Adat Bersendi Syarak </br> Syarak
+                Bersendi Kitabullah</p>
+            </p>
+            <p
+                class="text-base md:w-180 md:pl-2 md:text-center font-['Playfair_Display'] md:text-3xl text-left flex flex-col md:items-center gap-2 pt-3 reveal">
+                Adat istiadat berlandaskan ajaran Islam </br> Sedangkan ajaran Islam berpedoman pada Kitabullah
+                (Al-Qur'an)
+            </p>
+        </div>
+
+        <!--  <div
     class="bg-olive-700/50 text-left p-5 w-full min-h-[300px] rounded-lg shadow-xl shadow-olive-900/60 mt-1 grid justify-items-start items-center">
     <div class="md:grid justify-items-start items-center">
             <p class="text-2xl md:text-4xl md:font-bold font-serif text-amber-100">Adat Bersendi Syarak </br> Syarak
@@ -187,63 +191,64 @@
         </div>
         
     </div> -->
-
-    <div class="bg-gradient-to-r from-[#d97706] to-[#92400e]  p-5 w-full md:h-120 h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
-        id="beranda">
-        <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
+        <div class="  p-5 w-full md:h-120 h-auto text-amber-200  shadow-lg shadow-black/30" id="beranda">
+            <!-- <div class="w-full md:basis-150 h-[250px] md:h-[300px] hover:h-[260px] md:hover:h-[310px]  shadow-xl">
             <div class="bg-[url('')] bg-cover bg-center w-full h-full rounded-lg">
             </div> 
         </div> -->
-        <img src="https://cdn.phototourl.com/member/2026-11-09-ace2b0b7-5fff-4e76-96ae-ab3c792fdbc7.png"
-            class="float-left rounded-lg md:h-100 md:w-150 md:m-5 reveal">
-        <h1 class="text-2xl font-mono text-violet-200 text-center">
-            <p class="text-xl md:text-3xl font-bold font-['Playfair_Display'] text-[#fff5df] text-center crl">Mengenal
-                dan
-                Melestarikan
-                Budaya </p>
-            <p class="text-xl md:text-2xl font-bold font-['Playfair_Display'] text-[#fff5df] text-center crl">Desa Bunga
-                Tanjung</p>
-            <p class="text-base md:text-2xl font-['Poppins'] text-[#Ffffff] mt-4 text-justify reveal">
-                Desa Bunga Tanjung memiliki budaya yang kaya dan beragam.
-                Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke
-                generasi. Melalui pelestarian budaya,
-                kita dapat menjaga identitas desa dan memperkuat rasa kebersamaan di antara masyarakat.
-            </p>
-        </h1>
-        <p class="text-center pt-3">
+            <img src="https://cdn.phototourl.com/member/2026-11-09-ace2b0b7-5fff-4e76-96ae-ab3c792fdbc7.png"
+                class="float-left rounded-lg md:h-100 md:w-150 md:m-5 reveal">
+            <h1 class="text-2xl font-mono text-violet-200 text-center">
+                <p class="text-xl md:text-3xl font-bold font-['Playfair_Display']  text-center crl">
+                    Mengenal
+                    dan
+                    Melestarikan
+                    Budaya </p>
+                <p class="text-xl md:text-2xl font-bold font-['Playfair_Display'] 0 text-center crl">Desa
+                    Bunga
+                    Tanjung</p>
+                <p class="text-base md:text-2xl font-['Poppins']  mt-4 text-justify reveal">
+                    Desa Bunga Tanjung memiliki budaya yang kaya dan beragam.
+                    Budaya ini mencerminkan sejarah, tradisi, dan nilai-nilai yang telah diwariskan dari generasi ke
+                    generasi. Melalui pelestarian budaya,
+                    kita dapat menjaga identitas desa dan memperkuat rasa kebersamaan di antara masyarakat.
+                </p>
+            </h1>
+            <p class="text-center pt-3">
 
-            <button onclick="Jelajahi()"
-                class="bg-[#ffffff] text-[#7f171d] w-auto font-bold py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Jelajahi
-                Budaya →</button>
-        <div class="css-loader">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+                <button onclick="Jelajahi()"
+                    class="bg-[#344E41] text-[#FFFFFF] hover:bg-[#263B32] w-auto font-bold py-2 px-4 rounded-lg hover:bg-gray-300 shadow-xl transition duration-300 ease-in-out">Jelajahi
+                    Budaya →</button>
+            <div class="css-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            </p>
         </div>
-        </p>
     </div>
 
-    <div class=" bg-amber-200/40 backdrop-blur-md p-5 w-full min-h-[400px] rounded-lg mt-1 shadow-lg shadow-black/30"
-        id="profil-desa">
+
+    <div class="  bg-[#F3F4F6] p-5 w-full min-h-[400px] " id="profil-desa">
 
         <h1 class="text-3xl md:text-5xl text-[#344E41] font-['Playfair_Display'] text-center pt-6 crl">
             Kenapa harus Bunga Tanjung?
@@ -264,27 +269,28 @@
             identitas budaya masyarakat setempat.
         </h3>
     </div>
-    <div class="mb-3 pb-4 bg-[#fff2e1] rounded-lg mt-1 mb-1 shadow-lg shadow-black/30">
+
+    <div class="mb-3 pb-4 bg-[#F3F4F6] rounded-lg  mb-1 shadow-lg shadow-black/30">
         <h1 class="text-base md:text-3xl font-serif text-center text-[#344E41] pt-6 crl" id="Budaya">Adat dan Budaya
             Desa Bunga Tanjung
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 justify-items-center mt-10" id="adat&tradisi">
-            
-            <div class="grip-adat reveal bg-gradient-to-r from-[#a47148] to-[#5c3a21]">
+
+            <div class="grip-adat reveal bg-[#FFFFFF]">
                 <div
                     class="bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ES4gNRPAmvEx1PgkCSs1kv05bJsYeuvBxwLd77kO8byDL6AgplkO_mFWYCCBzhAiZiWdH__sJkc8stDN7F9sy2b3KaPH5UYhbpBVLcGNIIgTb3lcEAqHOD4ZlqnPRyN4rdfKK_M_1CTNSkuSr21PB01QNchJmvmDgiyVdTxb9sXa9AIJvoo5cwA6xg/s320/FB_IMG_16822131608910424.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Adat Lamo Pusako Usang</p>
                 <button onclick="LihatAdat()" class="show-hide">Lihat</button>
             </div>
-            <div class="grip-adat reveal bg-gradient-to-r from-[#a47148] to-[#5c3a21]">
+            <div class="grip-adat reveal bg-[#FFFFFF]">
                 <div
                     class="bg-[url('https://plain-apac-prod-public.komododecks.com/202611/09/M5ts6BUWJBgHSN1qjSVe/image.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
                 <p class="budaya-text">Kuliner Tradisional</p>
                 <button onclick="LihatKuliner()" class="show-hide">Lihat</button>
             </div>
-            <div class="grip-adat reveal bg-gradient-to-r from-[#a47148] to-[#5c3a21]">
+            <div class="grip-adat reveal bg-[#FFFFFF]">
                 <div
                     class="bg-[url('https://plain-apac-prod-public.komododecks.com/202611/09/Cie7gjzL1SJ9jzCaQkOn/image.jpg')] bg-cover bg-center w-39 h-30 md:w-70 md:h-60 rounded-lg">
                 </div>
@@ -336,17 +342,17 @@
 
     </div>
 
-    
 
 
-    <footer class="bg-[#292929] p-5 m-auto w-full shadow-amber-400 shadow-md rounded-lg text-center mt-2" id="kami">
-        <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Budaya Desa Bunga Tanjung</br></span>
-        <span class="text-base md:text-2xl font-mono text-[#d6d3d1]">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
+
+    <footer class="bg-[#292929] p-5 m-auto w-full shadow-amber-400 shadow-md rounded-t-lg text-center mt-2" id="kami">
+        <span class="text-base md:text-2xl font-mono text-[#F5E6B3]">Budaya Desa Bunga Tanjung</br></span>
+        <span class="text-base md:text-2xl font-mono text-[#F5E6B3]">Dari Leluhur untuk Anak Cucuk, Adat Kita Jaga
             Bersama</span>
-        <p class="text-sm md:text-base text-[#fff5df]">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
-        <p class="text-sm md:text-base text-[#fff5df]">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
+        <p class="text-sm md:text-base text-[#A3A3A3]">© 2026 Desa Bunga Tanjung Kec.Tanco Kab.Kerinci</p>
+        <p class="text-sm md:text-base text-[#D6D3D1]">Ebin Diarta Pratama · Titi Dwi Agusti Nur Osman · Nandhita
             Novelia Mykella · Muhammad Akbar Ciptasati · Muhammad Sahrul Ihsan</p>
-        <p class="text-sm md:text-base text-[#fff5df]">Informatika · Universitas Jambi</p>
+        <p class="text-sm md:text-base text-[#D6D3D1]">Informatika · Universitas Jambi</p>
     </footer>
 </body>
 <script>
