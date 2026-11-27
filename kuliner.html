@@ -223,7 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="md:grid grid-flow-col justify-items-center md:mb-20">
+    <div class="md:grid grid-flow-col justify-items-center md:mb-10">
         <div class="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-3 md:w-1/2 justify-items-center mt-10 md:mb-2 ml-2 mr-2"
             id="adat&tradisi">
             <div class="h-55 md:h-auto w-40 md:w-auto p-5 shadow-md rounded-lg hover:shadow-xl/100 flex flex-col items-center gap-2 reveal bg-[#FFFCF5] backdrop-blur-sm"
@@ -257,33 +257,45 @@
         </div>
     </div>
 
-    <div class="bg-[#EFE3CE] backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+    <div class="bg-[#EFE3CE] backdrop-blur-sm p-5 w-full md:h-auto md:min-h-75 rounded-lg shadow-lg shadow-black/30 mt-1"
         id="Lemang" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-12-dae9cfb3-72bb-400f-94d9-d330a0b92456.jpg"
-            class="float-left rounded-lg md:h-60 md:w-90 md:m-5 md:mt-3 crl">
+            class="float-left rounded-lg md:h-60 md:w-90 md:m-5 md:mt-5 crl">
         <h1 class="text-xl font-mono text-violet-200 ">
             <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Lemang merupakan makanan tradisional yang terbuat dari beras ketan, santan kelapa, dan sedikit garam.
                 Bahan-bahan tersebut dimasukkan ke dalam bambu yang bagian dalamnya dilapisi daun pisang, kemudian
-                dimasak dengan cara dibakar di dekat bara api hingga matang.
+                dimasak dengan cara dibakar di dekat bara api hingga matang.</p>
+                <div id="lee" style="display: block;">
+                        <button onclick="lmng()"
+                            class="text-base text-gray-950 hover:text-gray-500">Selengkapnya....</button>
+                    </div>
+                <div id="mang" style="display: none;">
+                <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Proses memasak lemang membutuhkan ketelatenan agar beras ketan matang secara merata dan menghasilkan
                 tekstur yang lembut, gurih, serta memiliki aroma khas bambu dan daun pisang.
                 Di wilayah Kerinci, lemang juga memiliki hubungan dengan tradisi kebersamaan masyarakat. Proses
                 pembuatannya sering dilakukan secara bergotong royong, terutama menjelang hari raya dan kegiatan
-                tertentu. Lemang biasanya dinikmati bersama keluarga maupun disajikan kepada tamu dalam berbagai
-                kesempatan.
+                tertentu.
             </p>
+            </div>
         </h1>
     </div>
-    <div class="bg-[#EFE3CE] backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+    <div class="bg-[#EFE3CE] backdrop-blur-sm p-5 w-full md:h-auto md:min-h-80 rounded-lg shadow-lg shadow-black/30 mt-1"
         id="ibat" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-12-499ba318-3ac3-4f1c-aa5c-46d11756361d.jpg"
-            class="float-left rounded-lg md:h-60 md:w-110 md:m-5 crl md:mt-8">
+            class="float-left rounded-lg md:h-60 md:w-90 md:m-5 crl md:mt-2">
         <h1 class="text-xl font-mono text-violet-200 ">
             <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Nasi Ibat atau dikenal juga dengan sebutan Nasei Ibeak merupakan hidangan tradisional masyarakat Kerinci
                 berupa nasi putih yang dibungkus menggunakan daun pisang. Kata ibat atau ibeak berarti bungkus,
-                sedangkan nasai berarti nasi.
+                sedangkan nasai berarti nasi.</p>
+                <div id="nasai" style="display: block;">
+                    <button onclick="nasiibat()"
+                    class="text-base text-gray-950 hover:text-gray-500">Selengkapnya....</button>
+                </div>
+                <div id="ibek" style="display: none;">
+                <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Nasi Ibat memiliki keistimewaan dari aroma daun pisang yang tercium ketika bungkusnya dibuka. Dalam
                 penyajiannya, Nasi Ibat biasanya dilengkapi dengan gulai merah berbahan daging sapi dan nangka muda,
                 atau gulai dengan bahan pelengkap lainnya.
@@ -292,16 +304,24 @@
                 dan kegiatan kemasyarakatan lainnya.
             </p>
         </h1>
+        </div>
     </div>
-    <div class="bg-[#EFE3CE] backdrop-blur-sm  p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+    <div class="bg-[#EFE3CE] backdrop-blur-sm  p-5 w-full md:h-auto md:min-h-75 rounded-lg shadow-lg shadow-black/30 mt-1"
         id="ondel" style="display: none;">
         <img src="https://cdn.phototourl.com/member/2026-11-15-08af825a-fa19-4b86-bbb3-c3aba02155f6.jpg"
-            class="float-left rounded-lg md:h-60 md:w-110 md:m-5 crl">
+            class="float-left rounded-lg md:h-60 md:w-90 md:m-5 crl">
         <h1 class="text-xl font-mono text-violet-200 ">
             <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Onde-onde merupakan salah satu kuliner tradisional masyarakat Desa Bunga Tanjung, Kecamatan Sitinjau
                 Laut, Kabupaten Kerinci, Jambi. Makanan ini memiliki ciri khas berupa bentuk bulat, warna hijau yang
-                berasal dari pewarna makanan, serta balutan kelapa parut pada bagian luarnya.
+                berasal dari pewarna makanan, serta balutan kelapa parut pada bagian luarnya.</p>
+                <div id="ondell" style="display: block;">
+                    <button onclick="ondelll()"
+                    class="text-base text-gray-950 hover:text-gray-500">Selengkapnya....</button>
+                </div>
+
+                <div id="ond" style="display: none;">
+            <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Berbeda dengan onde-onde yang umum dikenal, onde-onde khas Bunga Tanjung tidak menggunakan isian kacang
                 hijau maupun taburan wijen. Kelapa parut menjadi ciri khas yang memberikan cita rasa tersendiri pada
                 makanan tradisional ini.
@@ -309,20 +329,28 @@
                 Ramadan, Isra Mikraj, serta Maulid Nabi Muhammad SAW.
             </p>
         </h1>
+        </div>
     </div>
-    <div class="bg-[#F5EBDD] backdrop-blur-sm p-5 w-full md:h-auto rounded-lg shadow-lg shadow-black/30 mt-1"
+    <div class="bg-[#F5EBDD] backdrop-blur-sm p-5 w-full md:h-auto md:min-h-70 rounded-lg shadow-lg shadow-black/30 mt-1"
         id="Agar" style="display: none;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cDcvfNn8MC0E_Z-j4DPOBoxrnvY9TT2T2rACeBBaOg&s"
-            class="md:float-left rounded-lg md:h-50 md:w-75 h-80 w-100 md:m-5 crl ">
+            class="md:float-left rounded-lg md:h-50 md:w-75 h-90 w-100 md:m-5 crl ">
         <h1 class="text-xl font-mono text-violet-200 ">
             <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Agar-agar merupakan salah satu hidangan tradisional yang disajikan oleh masyarakat Desa Bunga Tanjung,
-                Kecamatan Sitinjau Laut, Kabupaten Kerinci, Jambi.
+                Kecamatan Sitinjau Laut, Kabupaten Kerinci, Jambi.</p>
+                <div id="agrr" style="display: block;">
+                    <button onclick="agg()"
+                    class="text-base text-gray-950 hover:text-gray-500">Selengkapnya....</button>
+                </div>
+                <div id="gar" style="display: none;">
+                <p class="text-base md:text-xl font-['Poppins'] text-gray-950 mt-4 reveal text-justify">
                 Agar-agar biasanya disajikan dalam berbagai kegiatan keagamaan dan kemasyarakatan, seperti peringatan 16
                 dan 27 Ramadan, Isra Mikraj, serta Maulid Nabi Muhammad SAW. Kehadiran hidangan ini menjadi bagian dari
                 kebiasaan masyarakat dalam menyediakan makanan untuk dinikmati bersama. Selain sebagai hidangan, tradisi
                 penyajiannya juga mencerminkan nilai kebersamaan, kepedulian, dan silaturahmi antarwarga.
             </p>
+        </div>
         </h1>
     </div>
 
@@ -353,6 +381,22 @@
     function Lihat4() {
         document.getElementById("agar").style.display = "none";
         document.getElementById("Agar").style.display = "block";
+    }
+    function lmng(){
+        document.getElementById("lee").style.display = "none";
+        document.getElementById("mang").style.display = "block";
+    }
+    function nasiibat(){
+        document.getElementById("nasai").style.display = "none";
+        document.getElementById("ibek").style.display = "block";
+    }
+    function ondelll(){
+        document.getElementById("ondell").style.display = "none";
+        document.getElementById("ond").style.display = "block";
+    }
+    function agg(){
+        document.getElementById("agrr").style.display = "none";
+        document.getElementById("gar").style.display = "block";
     }
 
     function LihatDetail(id) {
